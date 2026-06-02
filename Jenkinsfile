@@ -30,8 +30,8 @@ pipeline {
             }
             steps{
                 sh '''
-                    test build/index.html
-                    npm test -a
+                    test -f build/index.html
+                    npm test 
                     ls -la
                 '''
             }
